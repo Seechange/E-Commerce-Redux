@@ -1,32 +1,54 @@
 @import "tailwindcss";
 
 #root {
-    font-family: monospace;
+  font-family: monospace;
 }
+
 @keyframes vibration {
-    0% { transform: translate(0); }
-  25% { transform: translate(-2px, 2px); }
-  50% { transform: translate(2px, -2px); }
-  75% { transform: translate(-2px, -2px); }
-  100% { transform: translate(0); }
-  }
-  
-  .animate-vibrate {
-    animation: vibration 0.2s infinite;
-  }
-  
-  @keyframes gradient-flow {
-    0% { background-position: 0% 50%; }
-    100% { background-position: 100% 50%; }
-  }
-  
-  .animate-gradient {
-    @apply bg-gradient-to-r from-red-500 via-blue-500 to-green-500;
-    background-size: 300% 100%;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradient-flow 3s linear infinite;
+  0% {
+    transform: translate(0);
   }
 
-  
+  25% {
+    transform: translate(-2px, 2px);
+  }
+
+  50% {
+    transform: translate(2px, -2px);
+  }
+
+  75% {
+    transform: translate(-2px, -2px);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.animate-vibrate {
+  animation: vibration 0.2s infinite;
+}
+
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient {
+  @apply bg-gradient-to-r from-red-500 via-blue-500 to-green-500;
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient-flow 3s linear infinite;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #c7558e, #bd9bdf);
+}
