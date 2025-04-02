@@ -3,6 +3,9 @@
 /* #root {
   font-family: monospace;
 } */
+.flex::-webkit-scrollbar {
+  display: none;
+}
 
 @keyframes vibration {
   0% {
@@ -55,6 +58,6 @@
 
 @media (max-width: 430px) and (min-width: 390px) {
   .hide-phone {
-      display: none;
+    display: none;
   }
 }
