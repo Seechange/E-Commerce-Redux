@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-#root {
+/* #root {
   font-family: monospace;
-}
+} */
 
 @keyframes vibration {
   0% {
@@ -51,4 +51,10 @@
 
 .gradient-bg {
   background: linear-gradient(to right, #c7558e, #bd9bdf);
+}
+
+@media (max-width: 430px) and (min-width: 390px) {
+  .hide-phone {
+      display: none;
+  }
 }

@@ -1,5 +1,5 @@
 import { Facebook, Github, Instagram, PhoneCall, Twitter } from 'lucide-react'
-
+import { Link } from 'react-router-dom'
 const Topbar = () => {
     return (
         <div className="bg-gray-700 w-full h-auto ">
@@ -28,6 +28,11 @@ const Topbar = () => {
                 <div className='text-[12px] sm:text-sm flex flex-row items-center gap-2 text-white '>
                     <PhoneCall className='w-5 h-5 sm:w-6 h-6 animate-vibrate hover:text-pink-500 cursor-pointer' />
                     <span className='animate-gradient'> Contact: 0123456789</span>
+                </div>
+
+                <div className='flex flex-row items-center gap-2'>
+                    <Link to={'/signup'} className='px-2 py-1 border border-gray-500 rounded-2xl text-white cursor-pointer bg-purple-500 hover:scale-105 '>Signup</Link>
+                    <Link to={'/login'} className='px-2 py-1 border border-gray-500 rounded-2xl text-white cursor-pointer bg-pink-500 hover:scale-105 '>Login</Link>
                 </div>
 
             </div>

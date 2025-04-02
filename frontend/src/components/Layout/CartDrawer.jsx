@@ -1,5 +1,4 @@
 import { Car, Circle, CircleX } from "lucide-react"
-import { useState } from "react"
 import CartContent from "../Cart/CartContent"
 
 
@@ -7,7 +6,7 @@ const CartDrawer = ({ drawCartOpen, toggleDrawer }) => {
 
     return (
         <>
-            <div className={`fixed border-gray-500 w-4/5 right-0 sm:w-1/3 md:w-1/4 h-full
+            <div className={`fixed border-gray-500 w-4/5 right-0 sm:w-1/3 md:w-2/5 lg:w-1/3 h-full
             bg-white shadow-lg transform transition-transform duration-300 flex flex-col z-50 ${drawCartOpen ? 'translate-x-0' : 'translate-x-full'} `}>
                 <div className="h-[50px] relative text-white ">
                     <h2 className="text-xl font-bold uppercase text-center h-full flex items-center justify-center border-b-gray-500 bg-purple-500 shadow-md ">Your Cart</h2>

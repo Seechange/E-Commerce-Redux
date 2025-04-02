@@ -14,7 +14,7 @@ const SearchBar = () => {
     return (
         <>
             <Link to={"/"} className='font-bold hover:text-black/80 text-sm' onClick={() => setSearch(!search)} >
-                <Search className='size-5' />
+                <Search className='size-4 sm:size-5' />
             </Link>
             {search &&
                 <div className='gradient-bg absolute top-0 right-0 h-full w-full text-white transition-all duration-3000 shadow-lg  ' >
